@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Start Apache within the Docker container named
-# holbertonschool/265-0.
-service apache2 start
+# Debugging port 80 for Nginx.
+
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
